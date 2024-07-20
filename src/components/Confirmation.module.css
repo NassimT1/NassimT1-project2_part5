@@ -1,0 +1,53 @@
+.confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: #ffffff;
+    background: url('../assets/home-background.jpeg') center center;
+    position: relative;
+    height: 100vh; /* Adjust the height as needed */
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.confirmation::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better readability */
+    z-index: 1;
+}
+
+.confirmation-container {
+    z-index: 2;
+}
+
+.confirmation img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.confirmation h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.confirmation button {
+    background-color: #6e6e6e !important;
+    border-color: #333 !important;    
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.confirmation button:hover {
+    background-color: #9e9e9e !important;
+}
